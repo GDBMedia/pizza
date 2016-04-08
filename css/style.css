@@ -1,43 +1,54 @@
 .navbar{
-	height: 10em;
+	height: 24vmin;
 }
 .navbar-brand{
-	width: 20%;
-	height: 10%;
+	padding-top: 0em;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	width: 35vmin;
+	height: 22vmin;
+	float:none;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
 }
 @media (min-width: 1200px) {
 	body{
-		padding-top: 10em;
+		padding-top: 24vmin;
 		background-color: #333;
 	}
 }
 @media (min-width: 992px) {
 	body{
-		padding-top: 10em;
+		padding-top: 24vmin;
+		background-color: #333;
+	}
+}
+@media (min-width: 768px) {
+	body{
+		padding-top: 24vmin;
 		background-color: #333;
 	}
 }
 body{
 	background-color: #333;
 }
-.jumbotron{
+#headerjumbo{
 	padding-top: .5em;
 	height: 8em;
 }
 h1{
 	text-align: center;
 }
-label{
-	font-size: 1.5em;
-	color: #fafafa
+#infoform label{
+	font-size: 1.8em;
+	color: #fafafa;
 }
-input{
-	font-size: 3em;
-	height: 3em;
-	max-width: 100%;
-}
-form{
-	max-width: 45em;
+ form{
+	max-width: 60em;
 	margin: auto;
 }
 #info{
@@ -50,12 +61,62 @@ form{
 #city, #state, #zip{
 	font-size: 1.8em;
 	height: 1.8em;
-	max-width: 8em;
+	max-width: 9em;
 }
-.btn-danger{
+.btn-lg{
 	padding: .5em;
 	font-size: 1.8em;
 }
 .myhidden{
 	display: none;
+}
+.checkboxes label{
+	font-size: 1.5em;
+	color: #fafafa;
+	padding-right: .5em;
+}
+
+#orderform select{
+	font-size: 2em;
+	height: 2em;
+}
+
+#orderform .form-group{
+	padding-bottom: 2em;
+}
+.pizza h2{
+	float: right;
+	color: #fafafa;
+}
+#totalDisplay h1{
+	float: left;
+	color: #fafafa;
+}
+#delprice{
+	float: right;
+	color: #fafafa;
+}
+#dellabel{
+	float: left;
+	color: #fafafa;
+}
+.pizza{
+	clear: all;
+}
+#sizelabel, #veglabel, #prolabel{
+	font-size: 2.2em;
+	color: #fafafa;
+	padding-right: .5em;
+}
+.mybtn{
+	margin: auto;
+	text-align: center;
+}
+#getdeliver{
+	margin-top: 15vmin;
+	font-size: 5vmin;
+
+}
+#deliverymessage p{
+	font-size: 2.5em;
 }
