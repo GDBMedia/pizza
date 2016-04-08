@@ -1,0 +1,61 @@
+.navbar{
+	height: 10em;
+}
+.navbar-brand{
+	width: 20%;
+	height: 10%;
+}
+@media (min-width: 1200px) {
+	body{
+		padding-top: 10em;
+		background-color: #333;
+	}
+}
+@media (min-width: 992px) {
+	body{
+		padding-top: 10em;
+		background-color: #333;
+	}
+}
+body{
+	background-color: #333;
+}
+.jumbotron{
+	padding-top: .5em;
+	height: 8em;
+}
+h1{
+	text-align: center;
+}
+label{
+	font-size: 1.5em;
+	color: #fafafa
+}
+input{
+	font-size: 3em;
+	height: 3em;
+	max-width: 100%;
+}
+form{
+	max-width: 45em;
+	margin: auto;
+}
+#info{
+	text-align: center;
+}
+#name, #street{
+	font-size: 2em;
+	height: 2em;
+}
+#city, #state, #zip{
+	font-size: 1.8em;
+	height: 1.8em;
+	max-width: 8em;
+}
+.btn-danger{
+	padding: .5em;
+	font-size: 1.8em;
+}
+.myhidden{
+	display: none;
+}

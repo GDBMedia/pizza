@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Biernat's Pizzaria</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top hidden-sm hidden-xs">
+      <div class="container">
+        <img src="img/logo.png" class="navbar-brand">
+      </div>
+    </div>
+<!-- Navbar -->
+  <!--  header start -->
+    <div class="jumbotron">
+      <h1 id="order">ORDER NOW!</h1>
+      <h1 id="create" class="myhidden">CREATE PIZZA!</h1>
+    </div>
+  <!-- header end -->
+  <div class="container" id="mainbody">
+    <form class="form" id="infoform">
+          <div class="form-group">
+          <label for="name" class="control-label">Name:</label>
+          <input id="name" class="form-control" placeholder="Name" type="text">
+        </div>
+        <div class="form-group">
+          <label for="street" class="control-label">Address:</label>
+          <input id="street" class="form-control" placeholder="Street" type="text">
+        </div>
+        <div class="form-group controls form-inline" id="info">
+          <input id="city" class="form-control" placeholder="City" type="text">
+          <input id="state" class="form-control" placeholder="State" type="text">
+          <input id="zip" class="form-control" placeholder="Zip Code" type="text">
+        </div>
+        <button class="submit btn btn-lg btn-danger pull-right" id="submit">Continue</button>
+    </form>
+  </div>
+
+  </body>
+
+  </html>
