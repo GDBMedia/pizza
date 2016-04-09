@@ -72,10 +72,18 @@
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Olives">Olives</label>
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Red Onion">Red Onion</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Artichoke">Artichoke</label>
+            <br>
+            <br>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Sundried Tomatoes">Sundried Tomatoes</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Spinach">Spinach</label>
+            <label class="checkbox-inline"><input type="checkbox" disabled="true" name="toppings" value="Anchovies">Anchovies</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Tomatoes">Tomatoes</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Garlic">Garlic</label>
           </div>
         </div>
         <div class="form-group">
-          <label for="street" id="prolabel" class="control-label">Protien:</label><br>
+          <label for="street" id="prolabel" class="control-label">Protein:</label><br>
           <div class="checkboxes">
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
@@ -84,37 +92,21 @@
             <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Chicken">Chicken</label>
             <br>
             <br>
-            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
-            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
-            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Canadian Bacon">Canadian Bacon</label>
-            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Bacon">Bacon</label>
-            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Chicken">Chicken</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Buffalo Chicken">Buffalo Chicken</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Ground Beef">Ground Beef</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Ground Buffalo">Ground Buffalo</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Salami">Salami</label>
+            <label class="checkbox-inline"><input type="checkbox" name="toppings" value="Shrimp">Shrimp</label>
           </div>
         </div>
         <button class="submit btn btn-lg btn-danger pull-right">Continue</button>
     </form>
 <!-- orderform -->
-<!-- <div class="pizza pizza1"><h1>1 <span id="pizzaname1"></span></h1><h2 id="total1"></h2><br><br><br></div>
-      <div><hr class="pizza1"></div> -->
 
     <!-- display total -->
     <div id="totalDisplay" class="myhidden clearfix">
      <div id="display"></div>
-   <!--  <ul id="pizzalist">
 
-
-    </ul> -->
-     <!--  <div class="pizza pizza1"><h1>1 <span id="pizzaname1"></span></h1><h2 id="total1"></h2><br><br><br></div>
-      <div><hr class="pizza1"></div>
-       
-      <div class="myhidden pizza pizza2"><h1>1 <span id="pizzaname2"></span></h1><h2 id="total2"></h2><br><br><br></div>
-      <div><hr class="myhidden pizza2"></div>
-       
-      <div class="myhidden pizza pizza3"><h1>1 <span id="pizzaname3"></span></h1><h2 id="total3"></h2><br><br><br></div>
-      <div><hr class="myhidden pizza3"></div>
-      
-      <div class="myhidden pizza pizza4"><h1>1 <span id="pizzaname4"></span></h1><h2 id="total4"></h2><br><br><br></div>
-      <div><hr class="myhidden pizza4"></div> -->
       <div class="pizza delivery"><h3 id="dellabel">Delivery Cost</h3><h3 id="delprice">$2.99</h3><br><br><br></div>
       <div><hr class="delivery"></div>
       <br>
@@ -131,7 +123,8 @@
 
      <!-- delivery message -->
     <div id="deliverymessage" class="jumbotron myhidden clearfix">
-      <p>Order being Delivered to:</p>
+      <h3 id="endingtotal"></h3>
+      <h3>Order being Delivered to:</h3>
       <br>
       <p id="namedisplay"></p>
       <p id="streetdisplay"></p>

@@ -77,8 +77,6 @@ $(function(e){
 		$("#orderform").hide();
 		$("#totalDisplay").fadeIn("slow");
 		$("#display").append("<div class='pizza'><h1>1 " + pizzaName + " with " + topnum + " Toppings</h1><h2>Price: $" + pizzaPrice.toFixed(2) + "</h2><br><br><br></div><div><hr></div>")
-		// $("#pizzaname1").text(pizzaName);
-		// $("#total1").text("Price: $" + pizzaPrice);
 		$(".total").fadeIn("slow");
 		$("#total").text("$" + (grandTotal + 2.99).toFixed(2));
 
@@ -112,6 +110,7 @@ $(function(e){
 		$("#deliverymessage").fadeIn("slow");
 		$("#namedisplay").text(newOrderInfo.name);
 		$("#streetdisplay").text(newOrderInfo.street);
+		$("#endingtotal").text("Paid Price: $" + grandTotal.toFixed(2));
 		$("#addressdisplay").text(newOrderInfo.city + ", " + newOrderInfo.state + " " + newOrderInfo.zip);
 		$("#infoform")[0].reset();
 		return false;
