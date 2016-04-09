@@ -46,6 +46,7 @@ Pizza.prototype.name = function(){
 	return name;
 }
 $(function(e){
+	$("body").fadeIn(1200);
 	var arrayOfPizza = [];
 	var grandTotal = 0;
 	$("#getdeliver").click(function(e){
@@ -65,6 +66,9 @@ $(function(e){
 		$('input[name="toppings"]:checked').each(function() {
 		   topArray.push(this.value);
 		});
+		if(!sizeInput){
+			$("#sizegroup").addClass("has-error");
+		}else{
 		
 		arrayOfPizza.push(new Pizza(sizeInput, topArray));
 		var arrayIndex = (arrayOfPizza.length - 1)
@@ -81,7 +85,8 @@ $(function(e){
 		$("#total").text("$" + (grandTotal + 2.99).toFixed(2));
 
 		$("#orderform")[0].reset();
-		return false;
+		}
+		event.preventDefault();
 	});
 	$("#place").click(function(){
 		$("#receipt").hide();
@@ -91,18 +96,34 @@ $(function(e){
 		
 
 	});
+	$("#sizegroup").click(function(){
+		$("#sizegroup").removeClass("has-error");
+	});
+	$("#nameform").click(function(){
+		$("#nameform").removeClass("has-error");
+	});
+	$("#addressform").click(function(){
+		$("#addressform").removeClass("has-error");
+	});
+	$("#info").click(function(){
+		$("#info").removeClass("has-error");
+	});
 	$("#infoform").submit(function(e){
 		var nameInput = $("#name").val();
 		var streetInput = $("#street").val();
 		var cityInput = $("#city").val();
 		var stateInput = $("#state").val();
 		var zipInput = $("#zip").val();
-
+		if(!nameInput){
+			$("#nameform").addClass("has-error");
+		}
+		if(!streetInput){
+			$("#addressform").addClass("has-error");
+		}
+		if((!cityInput) || (!stateInput) || (!zipInput)){
+			$("#info").addClass("has-error");
+		}else{
 		var newOrderInfo = new OrderInfo(nameInput, streetInput, cityInput, stateInput, zipInput);
-		console.log(newOrderInfo.name);
-		console.log(newOrderInfo.street);
-		console.log(newOrderInfo.city);
-		console.log(newOrderInfo.state);
 
 		$("#infoform").hide();
 		$("#placeorder").hide();
@@ -113,6 +134,7 @@ $(function(e){
 		$("#endingtotal").text("Paid Price: $" + grandTotal.toFixed(2));
 		$("#addressdisplay").text(newOrderInfo.city + ", " + newOrderInfo.state + " " + newOrderInfo.zip);
 		$("#infoform")[0].reset();
+		}
 		return false;
 	});
 	$("#refresh").click(function(){
